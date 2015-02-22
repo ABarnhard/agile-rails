@@ -1,4 +1,16 @@
 <h1>Hello From Rails</h1>
 <p>The Time Is Now: <%= @time %></p>
 
+<%= 1 + 3 %>
+<br>
+<%= "cow" + "boy" %>
+<br>
+<%= 1.hour.from_now.localtime %>
+<br>
+<ul>
+  <% for file in @files %>
+    <li>File Name is: <%= file %></li>
+  <% end %>
+</ul>
+
 <p>Time To Say <%= link_to("Goodbye THis is the text", say_goodbye_path) %></p>
